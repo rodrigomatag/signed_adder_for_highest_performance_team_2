@@ -6,7 +6,7 @@
 // Design Name: 
 // Module Name: top
 //////////////////////////////////////////////////////////////////////////////////
-module top(
+module rodrigo_adder(
     input logic clk,
     input logic arst_n,
     input logic [3:0] a,
