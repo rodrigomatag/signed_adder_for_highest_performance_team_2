@@ -12,8 +12,8 @@ module rodrigo_adder(
     input logic [3:0] a,
     input logic [3:0] b,
     input logic cin,
-    output logic [4:0] sum
-    //output logic cout
+    output logic [3:0] sum,
+    output logic cout
     );
 // Internal signals
 logic [1:0] internal_sum;
@@ -127,7 +127,7 @@ full_adder FA_4 (
     .b(q_b[4]), // b[3] retrasado
     .cin(carry_6),
     .s(out_sum[4]),
-    .cout()
+    .cout(cout)
 );
 //outputs
 assign carry_0 = cin;
