@@ -236,7 +236,7 @@ module ksa_32bits(
     assign carries[32] = gen_step4[31] | (pro_step4[31] & carry_in_reg);
      
                                  
-    assign carry_out = carries[16];
+     assign carry_out = carries[32];
     
     genvar m;
     generate
